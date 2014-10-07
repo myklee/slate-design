@@ -4,7 +4,7 @@ var pelhamData, yonkersData, stuyData;
 
 pelhamData = {
     "header": {
-        "title": "Pelham School District",
+        "title": "Pelham Public Schools",
         "motto": "inspiring a standard of excellence for all students",
         "type": "classic"
     },
@@ -41,16 +41,36 @@ pelhamData = {
     ],
     "feed2": [
         {
-            "title": "feed title",
-            "body": "This is a post body"
+            "title": "",
+            "body": "Health Advisory - enterovirus EV-D68 - Read"
         },
         {
-            "title": "feed title",
-            "body": "This is a post body"
+            "title": "",
+            "body": "To View School Board Meetings Live:   Click To View Archive of 2014-15 Board Meetings:  Click (Click PLAY for the meeting you wish to view at far right.  Agenda will be included.) To View meetings on Educational Access TV - Cablevision and FiOS"
         },
         {
-            "title": "feed title",
-            "body": "This is a post body"
+            "title": "",
+            "body": "Oct. 6 School Board Mtg.  - New School Board Appointment and First of Four Work Sessions:  More"
+        },
+        {
+            "title": "",
+            "body": "Kindergarten and New Student Registration:   Forms, Requirements: Click"
+        },
+        {
+            "title": "",
+            "body": "Complete 2014-15 Calendar:  Download We will post instructions on how to link to Google Calendar, etc. soon."
+        },
+        {
+            "title": "",
+            "body": "Parents and Guardians: We must have updated contact information so we can reach you in case of an emergency."
+        },
+        {
+            "title": "",
+            "body": "Electronic Policy Book"
+        },
+        {
+            "title": "",
+            "body": "Technology Support - Helpful links, how to contact us, and more: Click   "
         }
     ],
     "calendar1": {
@@ -65,11 +85,11 @@ pelhamData = {
     "gallery1": {
         "images": [
             {
-                "path": "some image path 1",
+                "path": "images/pelham/IMG_1283.jpg",
                 "caption": "some caption 1"
             },
             {
-                "path": "some image path 2",
+                "path": "images/pelham/IMG_1291.jpg",
                 "caption": "some caption 2"
             }
 

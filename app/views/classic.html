@@ -14,8 +14,12 @@
         <section>
             <div class="one-third">{{schoolData.text1.body}}</div>
             <div class="two-third feature">
-                <ul rn-carousel>
-                    <li ng-repeat="slide in schoolData.gallery1.images">{{slide.path}}{{slide.caption}}</li>
+                <ul rn-carousel rn-carousel-control>
+                    <li ng-repeat="slide in schoolData.gallery1.images">
+                        <img src="{{slide.path}}"/>
+                        <p>{{slide.caption}}</p>
+                    </li>
+
                 </ul>
             </div>
         </section>
@@ -38,7 +42,9 @@
             </div>
             <div class="one-third">
                 <ul>
-                    <li ng-repeat="event in schoolData.calendar1.events">{{event.title}}{{event.body}}</li>
+                    <li ng-repeat="event in schoolData.calendar1.events">
+                        <header>{{event.title}}</header>
+                        <div>{{event.body}}{{event.date | date: 'yyyy MMM d EEEE hh:mm'}}</li>
                 </ul>
             </div>
         </section>
