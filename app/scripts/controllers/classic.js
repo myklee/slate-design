@@ -8,10 +8,7 @@
  * Controller of the prototypesApp
  */
 angular.module('slateSiteDesignPrototypesApp')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('classicCtrl', function ($scope) {
+    $scope.schoolData = pelhamData;
+
   });

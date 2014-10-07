@@ -1,32 +1,51 @@
-<header></header>
-<div class="jumbotron">
-    <h1>Slate Site Design</h1>
-    <p class="lead">
-        This prototype will demonstrate Slate public site design and interactivity.
-    </p>
-</div>
+<header class="classic">
+    <div class="main-logo"></div>
+    <h1>{{schoolData.header.title}}</h1>
 
-<div class="row marketing">
-    <h4>Why a prototype?</h4>
-    <p>
-        An live prototype will demonstrate more clearly how sites should work and how content can adapt to different layouts. We can show responsiveness as well as show interactivity.
-    </p>
+    <h3>{{schoolData.header.motto}}</h3>
+</header>
 
-    <h4>What is this built with?</h4>
-    <p>
-        Are you really asking? <3
-    </p>
+<nav class="classic">
 
-    <h4>Karma</h4>
-    <p>This is a prototype, so no. No Karma.</p>
+</nav>
 
-    <h2>And now... Onward ho! To the sites!</h2>
-    <ul>
-        <li><a href="/classic">classic</a></li>
-        <li><a href="/longScroll">longScroll</a></li>
-        <li><a href="/newsy">newsy</a></li>
-        <li><a href="/brochure">brochure</a></li>
-    </ul>
+<section id="content-body" class="classic">
+    <div class="layout-1">
+        <section>
+            <div class="one-third">{{schoolData.text1.body}}</div>
+            <div class="two-third feature">
+                <ul rn-carousel>
+                    <li ng-repeat="slide in schoolData.gallery1.images">{{slide.path}}{{slide.caption}}</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="one-third">
+                <ul>
+                    <li ng-repeat="post in schoolData.feed1">
+                        <header ng-bind-html="post.title"></header>
+                        <div ng-bind-html="post.body"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="one-third">
+                <ul>
+                    <li ng-repeat="post in schoolData.feed2">
+                        <header ng-bind-html="post.title"></header>
+                        <div ng-bind-html="post.body"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="one-third">
+                <ul>
+                    <li ng-repeat="event in schoolData.calendar1.events">{{event.title}}{{event.body}}</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</section>
 
-</div>
-
+<footer class="classic">
+    <p>{{schoolData.footer.address}}</p>
+    <a href="" ng-repeat="link in schoolData.footer.quickLinks">{{link}}</a>
+</footer>

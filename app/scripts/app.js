@@ -9,13 +9,13 @@
  * Main module of the application.
  */
 angular
-  .module('prototypesApp', [
+  .module('slateSiteDesignPrototypesApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch','angular-carousel'
   ])
   .config(function ($routeProvider) {
     $routeProvider
