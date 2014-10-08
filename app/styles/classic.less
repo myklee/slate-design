@@ -1,3 +1,52 @@
+html {
+  font-size: 100%;
+}
 body {
   background-color: #f2f2f2;
+  font-size: 1em;
 }
+#content-body {
+  background-color: @white;
+  padding:10px;
+}
+
+//text block
+.text-block {
+  box-shadow:0 0 3px rgba(0,0,0,0.15);
+  padding: 10px;
+}
+
+
+//gallery block
+.gallery-block-slider {
+  height: 400px;
+}
+.slide-wrapper {
+  .square(100%);
+  background-position: center center;
+  background-size: cover;
+}
+.slide-caption {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  background-color: rgba(0,0,0,0.33);
+  color:#fff;
+  padding:10px;
+  box-sizing: border-box;
+  font-size:0.8em;
+}
+
+.layout-1 {
+  > .block-row-1 {
+    margin-bottom:10px;
+    > .two-third {
+      margin-left:5px;
+    }
+
+  }
+  > .block-row-2 {
+    background-color: #c6c6c6;
+  }
+}
+

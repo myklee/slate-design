@@ -3,10 +3,94 @@
 var pelhamData, yonkersData, stuyData;
 
 pelhamData = {
+    "colors": {
+        "color1":"1b2c58",
+        "color2":"f5d235",
+        "color3":"00003c",
+        "color4":"",
+        "color5":""
+    },
     "header": {
         "title": "Pelham Public Schools",
         "motto": "inspiring a standard of excellence for all students",
         "type": "classic"
+    },
+    "mainNav": {
+        "navItems": [
+            {
+                "label": "District Info",
+                "path": 'somepath',
+                "subMenu": false
+            },
+            {
+                "label": "Board of Education",
+                "path": 'somepath',
+                "subMenu": false
+            },
+            {
+                "label": "Teaching and Learning",
+                "path": 'somepath',
+                "subMenu": false
+            },
+            {
+                "label": "Pupil Personnel/Special Education",
+                "path": 'somepath',
+                "subMenu": false
+            },
+            {
+                "label": "Parents and Community",
+                "path": 'somepath',
+                "subMenu": true,
+                "dropdown": [
+                    {
+                        "label":"Communication",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Community Resources",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Drug and Alcohol Prevention and Resources",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Emergency Guide for Parents",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Guidelines for Community Organization Hanging Banners on School Property",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Communication",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Communication",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Communication",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Communication",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Communication",
+                        "path":"somepath"
+                    },
+                    {
+                        "label":"Communication",
+                        "path":"somepath"
+                    }
+                ]
+            }
+        ],
+        "style": "",
+        "options": ""
     },
     "footer": {
         "address": "Pelham Public School District, 18 Franklin Place, Pelham, NY 10803 Phone: 914-738-3434 | Fax: 914-738-7223",
@@ -37,7 +121,7 @@ pelhamData = {
             "title": "feed title",
             "body": "<p>Tech Tools: <a href=''>App for eChalk</a> Google Calendar:  <a href=''>Download school calendar</a> (See p 5)</p>"
         }
-        
+
     ],
     "feed2": [
         {
@@ -78,7 +162,7 @@ pelhamData = {
             {
                 "title": "Event Title Here",
                 "description": "Event description here.",
-                "date": new Date(11,25,33)
+                "date": new Date(11, 25, 33)
             }
         ]
     },
@@ -86,11 +170,11 @@ pelhamData = {
         "images": [
             {
                 "path": "images/pelham/IMG_1283.jpg",
-                "caption": "some caption 1"
+                "caption": "Pelham Schools held its first Professional Learning Community session recently, and initial feedback from the faculty was positive."
             },
             {
                 "path": "images/pelham/IMG_1291.jpg",
-                "caption": "some caption 2"
+                "caption": "\"Teachers and principals expressed great satisfaction with the first of eight delayed openings for professional learning,\" said Dr. Steven Garcia, Assistant Superintendent for Curriculum, Instruction, and Personnel."
             }
 
         ],
