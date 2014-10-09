@@ -1,6 +1,11 @@
-<header class="classic">
-    <h1>{{schoolData.header.title}}</h1>
-    <h3>{{schoolData.header.motto}}</h3>
+<header class="classic header-1">
+    <div class="block-1">
+        <h1 class="site-title">{{schoolData.header.title}}</h1>
+
+        <h3 class="site-sub-title">{{schoolData.header.motto}}</h3>
+    </div>
+    <div class="block-2"></div>
+    <div class="block-3"></div>
 </header>
 
 <nav id="#main-nav-wrapper" class="classic nav-1 whole" style="background-color: #{{schoolData.colors.color1}}">
@@ -14,11 +19,13 @@
     <div class="layout-1">
         <section class="block-row-1">
             <div class="third text-block">{{schoolData.text1.body}}</div>
-            <div class="two-third feature gallery-block">
-                <ul rn-carousel rn-carousel-control class="gallery-block-slider">
+
+            <!--carousel block-->
+            <div class="two-third feature carousel-block">
+                <ul rn-carousel rn-carousel-control class="carousel-block-slider">
                     <li ng-repeat="slide in schoolData.gallery1.images">
                         <div class="slide-wrapper" style="background-image: url('{{slide.path}}');">
-                            <div class="slide-caption" ng-bind-html="slide.caption"></div>
+                            <div class="slide-caption-1" ng-bind-html="slide.caption"></div>
                         </div>
                     </li>
 
@@ -26,7 +33,7 @@
             </div>
         </section>
         <section class="block-row-2">
-            <div class="third">
+            <div class="third feed-1">
                 <ul>
                     <li ng-repeat="post in schoolData.feed1">
                         <header ng-bind-html="post.title"></header>
@@ -34,7 +41,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="third">
+            <div class="third feed-1">
                 <ul>
                     <li ng-repeat="post in schoolData.feed2">
                         <header ng-bind-html="post.title"></header>
@@ -42,18 +49,19 @@
                     </li>
                 </ul>
             </div>
-            <div class="third">
+            <div class="third events-1">
                 <ul>
                     <li ng-repeat="event in schoolData.calendar1.events">
                         <header>{{event.title}}</header>
-                        <div>{{event.body}}{{event.date | date: 'yyyy MMM d EEEE hh:mm'}}</li>
+                        <div>{{event.body}}{{event.date | date: 'yyyy MMM d EEEE hh:mm'}}</div>
+                    </li>
                 </ul>
             </div>
         </section>
     </div>
 </section>
 
-<footer class="classic full">
+<footer class="classic whole">
     <p>{{schoolData.footer.address}}</p>
     <a href="" ng-repeat="link in schoolData.footer.quickLinks">{{link}}</a>
 </footer>

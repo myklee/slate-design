@@ -3,6 +3,7 @@
 @import url('http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300');
 @import url('http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
+@import url('http://fonts.googleapis.com/css?family=Balthazar');
 @import "angular-carousel.css";
 /* app css stylesheet */
 .clearfix {
@@ -183,12 +184,6 @@
 .wide-1280 {
   max-width: 1280px;
 }
-footer {
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: #666666;
-}
 #main-nav {
   display: block;
   margin: 0 auto;
@@ -223,6 +218,11 @@ body {
   background-color: #f2f2f2;
   font-size: 1em;
 }
+.site-title,
+.site-sub-title {
+  font-family: Balthazar, serif;
+  text-transform: uppercase;
+}
 #content-body {
   background-color: #ffffff;
   padding: 10px;
@@ -231,7 +231,7 @@ body {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   padding: 10px;
 }
-.gallery-block-slider {
+.carousel-block-slider {
   height: 400px;
 }
 .slide-wrapper {
@@ -240,7 +240,7 @@ body {
   background-position: center center;
   background-size: cover;
 }
-.slide-caption {
+.slide-caption-1 {
   position: absolute;
   bottom: 0;
   width: 100%;
