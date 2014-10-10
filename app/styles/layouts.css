@@ -1,0 +1,28 @@
+/*
+layout 1
+third, two-third / third, third third
+[ ][    ]
+[ ][ ][ ]
+*/
+.layout-1 > .row-1 {
+  margin-bottom: 10px;
+}
+.layout-1 > .two-third {
+  margin-left: 5px;
+}
+.layout-1 > .block-row-2 {
+  background-color: #c6c6c6;
+}
+/*
+layout 2
+whole/whole/whole
+[    ]
+*/
+/*
+[][][][]
+[ ][ ]
+[    ]
+[ ][    ]
+[ ][ ][ ]
+[       ]
+*/

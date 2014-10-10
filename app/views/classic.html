@@ -17,11 +17,11 @@
 <section id="content-body" class="classic wide-960">
     <!--layout 1-->
     <div class="layout-1">
-        <section class="block-row-1">
-            <div class="third text-block">{{schoolData.text1.body}}</div>
+        <section class="block-row row-1">
+            <div class="block third text-block">{{schoolData.text1.body}}</div>
 
             <!--carousel block-->
-            <div class="two-third feature carousel-block">
+            <div class="block two-third feature carousel-block">
                 <ul rn-carousel rn-carousel-control class="carousel-block-slider">
                     <li ng-repeat="slide in schoolData.gallery1.images">
                         <div class="slide-wrapper" style="background-image: url('{{slide.path}}');">
@@ -32,7 +32,7 @@
                 </ul>
             </div>
         </section>
-        <section class="block-row-2">
+        <section class="block-row row-2">
             <div class="third feed-1">
                 <ul>
                     <li ng-repeat="post in schoolData.feed1">
